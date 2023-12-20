@@ -8,6 +8,8 @@ clear turistas;
 users = unique(t(:,1));
 numUsers = length(users);
 
+Set = cell{numUsers, 1};
+
 userID = input('Insert User ID (1 to 836): ');
 if userID < 1 || userID > numUsers
     userID = input('The number you gave is invalid. Try again: ');
@@ -36,7 +38,7 @@ while true
             restaurants = restaurantsEvaluated(userID, t);
             n = length(restaurants);
             for i = 1:n
-                
+                printInfo(restaurants(i), rest);
             end
             continue;
         % Set of restaurants evaluated by the most similar user
@@ -127,5 +129,10 @@ function restaurants = restaurantsEvaluated(userID, t)
 end
     
 function printInfo(restaurant, rest)
-    fprintf('Restaurant ID: %3d - %20s | Location: %20s, %12s | Cuisine: %15s | Dishes: %30s | Days off: %8s\n', rest{restaurant, 1:7});
+    for i = 1:7
+        if ismissing(rest{restaurant, i})
+            rest{restaurant, i} = '';
+        end
+    end
+    fprintf('Restaurant ID: %3d - %s | Location: %s, %s | Cuisine: %s | Dishes: %s | Days off: %s\n', rest{restaurant, 1:7});
 end

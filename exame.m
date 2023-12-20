@@ -8,6 +8,8 @@ clear turistas;
 users = unique(t(:,1));
 numUsers = length(users);
 
+Set = restaurantsEvaluated(t);
+
 userID = input('Insert User ID (1 to 836): ');
 if userID < 1 || userID > numUsers
     userID = input('The number you gave is invalid. Try again: ');
@@ -33,23 +35,21 @@ while true
     switch userInput
         % Restaurants evaluated by you
         case 1
-            restaurants = restaurantsEvaluated(userID, t);
+            restaurants = Set{userID};
             n = length(restaurants);
             for i = 1:n
                 printInfo(restaurants(i), rest);
             end
             continue;
         % Set of restaurants evaluated by the most similar user
-        case 2  
-            [max_sim, user_sim] = max(JU_naive(user_id, :));
-            restaurants = usersSet{user_sim};
-            fprintf('Most similar user (naive): %d - Similarity: %f\n', user_sim, max_sim);
-            printRestaurants(restaurants_data(restaurants, :));
-
-            [max_sim, user_sim] = max(JU_minhash(user_id, :));
-            restaurants = usersSet{user_sim};
-            fprintf('Most similar user (minhash): %d - Estimated Similarity: %f\n', user_sim, max_sim);
-            printRestaurants(restaurants_data(restaurants, :));
+        case 2 
+            J = calculateDistances(Set, numUsers, userID);
+            [minValue, simUser] = min(J(:, userID));
+            restaurants = Set{simUser};
+            n = length(restaurants);
+            for i = 1:n
+                printInfo(restaurants(i), rest);
+            end
             continue;
         % Search restaurant
         % TODO: PODEMOS IMPLEMENTAR FILTROS DE BLOOM AQUI 
@@ -121,9 +121,17 @@ while true
     end
 end
 
-function restaurants = restaurantsEvaluated(userID, t)
-    ind = t(:, 1) == userID;
-    restaurants = t(ind, 2);
+function Set = restaurantsEvaluated(userData)
+    % Lista de utilizadores
+    users = unique(userData(:,1));      % Fica com os IDs dos utilizadores
+    Nu = length(users);                 % Número de utilizadores
+
+    % Lista de restaurantes para cada utilizador
+    Set = cell(Nu, 1);                          % Inicializa a lista de restaurantes para cada utilizador
+    for n = 1:Nu                                % Para cada utilizador
+        ind = userData(:,1) == users(n);        % Índices dos restaurantes avaliados pelo utilizador n
+        Set{n} = [Set{n} userData(ind,2)];      % Adiciona os restaurantes avaliados pelo utilizador n
+    end
 end
     
 function printInfo(restaurant, rest)
@@ -133,4 +141,18 @@ function printInfo(restaurant, rest)
         end
     end
     fprintf('Restaurant ID: %3d - %s | Location: %s, %s | Cuisine: %s | Dishes: %s | Days off: %s\n', rest{restaurant, 1:7});
+end
+
+function J = calculateDistances(set, numUsers, userID)
+    J=zeros(numUsers);
+    tic
+    for n2= 1:numUsers
+        if n2 ~= userID
+            i = intersect(set{userID}, set{n2});
+            u = union(set{userID}, set{n2});
+            J(n2) = 1 - (length(i)/length(u));
+        end
+    end
+    J(userID, userID) = 1;
+    toc
 end
