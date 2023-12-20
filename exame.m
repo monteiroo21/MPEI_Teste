@@ -38,7 +38,7 @@ while true
             restaurants = Set{userID};
             n = length(restaurants);
             for i = 1:n
-                printInfo(restaurants(i), rest);
+                printInfo1(restaurants(i), rest);
             end
             continue;
         % Set of restaurants evaluated by the most similar user
@@ -52,7 +52,6 @@ while true
             end
             continue;
         % Search restaurant
-        % TODO: PODEMOS IMPLEMENTAR FILTROS DE BLOOM AQUI 
         case 3
             restaurant = input("Write a string: ", "s");
             distances = zeros(numRest);
@@ -80,30 +79,12 @@ while true
             end
             continue;
         case 4
-            % Restaurantes mais similares aos avaliados pelo utilizador atual
-            % Método naive
-            % Lista de restaurantes avaliados pelo utilizador atual
-            restaurants = cell2mat(restaurants_data(usersSet{user_id}));
-            
-            % Comparar com todos os restaurantes
-            for index = 1:length(restaurants)
-                % Calcular a distância de Jaccard entre n e todos os restaurantes
-                min_dist = inf;
-                rest_dist = 0;
-                for m = 1:N_restaurants
-                    % Se o restaurante já foi avaliado pelo utilizador atual, ignorar
-                    if ismember(m, restaurants)
-                        continue;
-                    end
-                    sim = JR_naive(restaurants(index), m);
-                    if sim < min_dist
-                        min_dist = sim;
-                        rest_dist = m;
-                    end 
-                end
-                fprintf('Most similar restaurant (naive): %d - Similarity: %f\n', rest_dist, 1-min_dist);
-                printRestaurants(restaurants_data([restaurants(index), rest_dist], :));
+            restaurants = Set{userID};
+            n = length(restaurants);
+            for i = 1:n
+                printInfo1(restaurants(i), rest);
             end
+            
             continue;
         % Estimate the number of evaluations for each restaurant
         case 5
@@ -135,7 +116,7 @@ function printInfo(restaurant, rest)
 end
 
 function printInfo1(restaurant, rest)
-    fprintf('Restaurant ID: %3d - %s | Location: %s\n', rest{restaurant, 1:3});
+    fprintf('Restaurant ID: %3d - %s | Location: %s\n', rest{restaurant, 1:2}, rest{restaurant, 4});
 end
 
 function J = calculateDistances(set, numUsers, userID)
@@ -145,7 +126,7 @@ function J = calculateDistances(set, numUsers, userID)
         if n2 ~= userID
             i = intersect(set{userID}, set{n2});
             u = union(set{userID}, set{n2});
-            J(n2) = 1 - (length(i)/length(u));
+            J(n2, userID) = 1 - (length(i)/length(u));
         end
     end
     J(userID, userID) = 1;
