@@ -8,7 +8,7 @@ clear turistas;
 users = unique(t(:,1));
 numUsers = length(users);
 
-Set = cell{numUsers, 1};
+Set = restaurantsEvaluated(t);
 
 userID = input('Insert User ID (1 to 836): ');
 if userID < 1 || userID > numUsers
@@ -35,61 +35,48 @@ while true
     switch userInput
         % Restaurants evaluated by you
         case 1
-            restaurants = restaurantsEvaluated(userID, t);
+            restaurants = Set{userID};
             n = length(restaurants);
             for i = 1:n
                 printInfo(restaurants(i), rest);
             end
             continue;
         % Set of restaurants evaluated by the most similar user
-        case 2  
-            [max_sim, user_sim] = max(JU_naive(user_id, :));
-            restaurants = usersSet{user_sim};
-            fprintf('Most similar user (naive): %d - Similarity: %f\n', user_sim, max_sim);
-            printRestaurants(restaurants_data(restaurants, :));
-
-            [max_sim, user_sim] = max(JU_minhash(user_id, :));
-            restaurants = usersSet{user_sim};
-            fprintf('Most similar user (minhash): %d - Estimated Similarity: %f\n', user_sim, max_sim);
-            printRestaurants(restaurants_data(restaurants, :));
+        case 2 
+            J = calculateDistances(Set, numUsers, userID);
+            [minValue, simUser] = min(J(:, userID));
+            restaurants = Set{simUser};
+            n = length(restaurants);
+            for i = 1:n
+                printInfo(restaurants(i), rest);
+            end
             continue;
         % Search restaurant
         % TODO: PODEMOS IMPLEMENTAR FILTROS DE BLOOM AQUI 
         case 3
-            query = input("Insert restaurant name or ID: ", "s");
-            restaurant_id = str2double(query);            
-            if isnan(restaurant_id)  % Se não for um número
-                % Procurar o restaurante pelo nome
-                restaurant_id = find(strcmp(restaurants_data(:, restName), query));
-                if isempty(restaurant_id)
-                    fprintf('Restaurant not found\n');
-                    continue;
-                end
-            else
-                % Procurar o restaurante pelo ID
-                if restaurant_id < 1 || restaurant_id > N_restaurants
-                    fprintf('Invalid restaurant ID\n');
-                    continue;
+            restaurant = input("Write a string: ", "s");
+            distances = zeros(numRest);
+            for i = 1:numRest
+                distances(i) = calculateDistancesShingles(restaurant, rest{i, 2});
+            end
+            sortedDistances = sort(distances);
+            ind = zeros(5);
+            for j = 1:5
+                for k = 1:numRest
+                    if (sortedDistances(j) == distances(k))
+                        ind(j) = k;
+                    end
                 end
             end
-            % Mostrar os dados do restaurante
-            fprintf('Restaurant ID: %d - %s\n', restaurants_data{restaurant_id, restID:restName});
-            fprintf('Location: %s, %s\n', restaurants_data{restaurant_id, restLoc:restConc});
-            fprintf('Cuisine: %s\n', restaurants_data{restaurant_id, restCuisine});
-            fprintf('Dishes: %s\n', restaurants_data{restaurant_id, restDishes});
-            fprintf('Days off: %s\n', restaurants_data{restaurant_id, restDays});
-
-            % Mostrar se o utilizador atual avaliou o restaurante
-            if ismember(restaurant_id, usersSet{user_id})
-                fprintf('Your score: %d\n', turistas_data(turistas_data(:, 1) == user_id & turistas_data(:, 2) == restaurant_id, 3));
-            else
-                fprintf('You have not evaluated this restaurant\n');
+            num = 0;
+            for k = 1:5
+                if distances(ind(k)) <= 0.99
+                    printInfo(ind(k), rest);
+                    num = num + 1;
+                end
             end
-
-            searched_restaurant = restaurant_id;
-
+            
             continue;
-            % Find most similar restaurants
         case 4
             % Restaurantes mais similares aos avaliados pelo utilizador atual
             % Método naive
@@ -123,9 +110,17 @@ while true
     end
 end
 
-function restaurants = restaurantsEvaluated(userID, t)
-    ind = t(:, 1) == userID;
-    restaurants = t(ind, 2);
+function Set = restaurantsEvaluated(userData)
+    % Lista de utilizadores
+    users = unique(userData(:,1));      % Fica com os IDs dos utilizadores
+    Nu = length(users);                 % Número de utilizadores
+
+    % Lista de restaurantes para cada utilizador
+    Set = cell(Nu, 1);                          % Inicializa a lista de restaurantes para cada utilizador
+    for n = 1:Nu                                % Para cada utilizador
+        ind = userData(:,1) == users(n);        % Índices dos restaurantes avaliados pelo utilizador n
+        Set{n} = [Set{n} userData(ind,2)];      % Adiciona os restaurantes avaliados pelo utilizador n
+    end
 end
     
 function printInfo(restaurant, rest)
@@ -135,4 +130,65 @@ function printInfo(restaurant, rest)
         end
     end
     fprintf('Restaurant ID: %3d - %s | Location: %s, %s | Cuisine: %s | Dishes: %s | Days off: %s\n', rest{restaurant, 1:7});
+end
+
+function printInfo1(restaurant, rest)
+    fprintf('Restaurant ID: %3d - %s | Location: %s\n', rest{restaurant, 1:3});
+end
+
+function J = calculateDistances(set, numUsers, userID)
+    J=zeros(numUsers);
+    tic
+    for n2= 1:numUsers
+        if n2 ~= userID
+            i = intersect(set{userID}, set{n2});
+            u = union(set{userID}, set{n2});
+            J(n2) = 1 - (length(i)/length(u));
+        end
+    end
+    J(userID, userID) = 1;
+    toc
+end
+
+function h= DJB31MA( chave, seed)
+    len= length(chave);
+    chave= double(chave);
+    h= seed;
+    for i=1:len
+        h = mod(31 * h + chave(i), 2^32 -1);
+    end
+end
+
+function hash=string2hash(str,type)
+    str=double(str);
+    if(nargin<2), type='djb2'; end
+    switch(type)
+        case 'djb2'
+            hash = 5381*ones(size(str,1),1); 
+            for i=1:size(str,2)
+                hash = mod(hash * 33 + str(:,i), 2^32-1); 
+            end
+        case 'sdbm'
+            hash = zeros(size(str,1),1);
+            for i=1:size(str,2)
+                hash = mod(hash * 65599 + str(:,i), 2^32-1);
+            end
+        otherwise
+            error('string_hash:inputs','unknown type');
+    end
+end
+
+function shingles = createShingles(str, n)
+    shingles = cell(1, length(str) - n + 1);
+    for i = 1:length(str) - n + 1
+        shingles{i} = str(i:i+n-1);
+    end
+end
+
+function distance = calculateDistancesShingles(str1, str2)
+    set1 = unique(createShingles(str1, 5));
+    set2 = unique(createShingles(str2, 5));
+    i = intersect(set1, set2);
+    u = union(set1, set2);
+    distance = 1 - (length(i)/length(u));
 end
