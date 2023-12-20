@@ -1,0 +1,215 @@
+1	Campo de Golfe	Amarante	Amarante	Tradicional portuguesa	Bacalhau com broa e outros	Domingo à noite
+2	Casa da Calçada	Amarante	Amarante	1 * Michelin		
+3	Quinta da Lama	Real - Vila - Meã	Amarante	Tradicional portuguesa	Bacalhau	
+4	Zé da Calçada	Amarante	Amarante	Tradicional portuguesa	Cabrito Assado, arroz de pato e outros	
+5	Churrasqueira Caldelas	Caldelas	Amares	Tradicional portuguesa	Bacalhau à casa/peixe a pedido	
+6	Cruzeiro	Amares	Amares	Tradicional portuguesa	Vários	Não encerra
+7	Espalha Brasas	Braga	Amares	Tradicional portuguesa	Açorda de Marisco/Bacalhau	3ª feira
+8	Pousada Santa Maria do Bouro	Amares	Amares	Variada		Não encerra
+9	Quinta do Esquilo	Amares	Amares	Regional		Não encerra
+10	O Caneiro	Arco de Baúlhe	Arco de Baúlhe	Regional	Arroz de Tamboril, Lombinhos	2ª feira
+11	Alto da Prova	Arcos de Valdevez	Arcos de Valdevez	Variada	Bacalhau com broa	Não encerra
+12	Grill/Costa do Vez	Silvares	Arcos de Valdevez	Tradicional portuguesa		2ª feira
+13	O Lagar	Arcos de Valdevez	Arcos de Valdevez	Tradicional portuguesa		Não encerra
+14	Videira	Arcos de Valdevez	Arcos de Valdevez	Tradicional portuguesa		3ª e 4ª feira
+15	DOC	Folgosa	Armamar	Gourmet	Tudo Bom	Domingo à noite e 2ª feira
+16	Pensão Borges	Baião	Baião	Tradicional portuguesa	Arroz do forno e anho assado e cozido à portuguesa	Não encerra
+17	Bagoeira	Barcelos	Barcelos	Regional	Vários	Não encerra
+18	Outerinho	Barcelos	Barcelos	Tradicional portuguesa	Bacalhau com Broa	Domingo à noite e 2ª feira
+19	Pedra Furada	Barcelos	Barcelos	Regional		Não encerra
+20	Viúva de Medros	Barcelinhos	Barcelos	Caseira	Estufados	
+21	Casa de Carvalhelhos (Taberna)	Boticas	Boticas	Regional		Não encerra (por marcação)
+22	Casa de Vilar (Taberna)	Boticas	Boticas	Regional	Vitela Barrosã	Não encerra
+23	5 Hoteis Bom Jesus 	Braga	Braga	Tradicional portuguesa	Variados	Não encerra
+24	Abade de Priscos	Braga	Braga	Variada		Domingo e 2ª feira ao almoço
+25	Arcoense	Braga	Braga	Tradicional portuguesa	Rojões c/papas, cabrito, cozido, etc.	Domingo
+26	Brito´s	Braga	Braga	Tradicional portuguesa	Rojões c/papas, cabrito, bacalhau, etc.	4ª feira
+27	Casa da Pedra Cavalgada	Braga	Braga	Regional		Domingo à noite e 2ª feira
+28	D. Júlia	Braga	Braga	Regional	Cabrito, Bacalhau/ peixe grelhado	2ª feira
+29	D.Elvira	Braga	Braga	Tradicional portuguesa	Filetes de Polvo c/ arroz de grelos, Bacalhau na Braga e Medalhões de Vitela	Não encerra
+30	Inácio	Braga	Braga	Variada		3ª feira
+31	Maia	Braga	Braga	Regional	Bacalhau à Sameiro e Papas à moda de Braga c/ rojões	Não encerra
+32	Expositor do Migaitas	Braga	Braga	Variada	"Peixe fresco; costelinha barrosã no forno; cabrito no forno; moamba"	Domingo à noite e 3ª feira
+33	O Fausto	Braga	Braga	Caseira	Cabrito e pica no chão	
+34	São Frutuoso	Braga	Braga	Tradicional portuguesa	Papas sarrabulho, Arroz pica no chão.	2ª feira
+35	Solar do Paço 	Braga	Braga	Tradicional portuguesa	Costeletão Grelhado	Não encerra
+36	Chefe Ruca	Bragança	Bragança	Tradicional portuguesa	Posta/Cabrito Assado na Brasa	3ª feira
+37	O Abel             (Rest. Típico)	Bragança	Bragança	Tradicional portuguesa	Posta/Cabrito Assado na Brasa	2ª feira
+38	O Geadas	Bragança	Bragança	Tradicional portuguesa	Cherne/Linguado grelhado	Não encerra
+39	O Javali	Bragança	Bragança	Tradicional portuguesa	Javali c/ Castanhas	2ª feira
+40	O Rochedo	Bragança	Bragança	Regional	"Bacalhau com gambas; Bacalhau com Natas
+"	Não encerra
+41	Pousada S. Bartolomeu	Bragança	Bragança	Tradicional portuguesa	Filetes Polvo	Não encerra
+42	Real Feitoria	Bragança	Bragança	Regional		Não encerra
+43	Solar Bragançano	Bragança	Bragança	Regional		2ª. feira (Inverno)
+44	Churraqueira o Paço	Arco de Baúlhe	Cabeceiras de Basto	Tradicional portuguesa	Lombinho, costelinhas. Churrasco de boi, frango de churrasco	3ª feira
+45	Luis do Outeirinho	Outeirinho	Cabeceiras de Basto	Tradicional portuguesa	Bacalhau c/ batatas a murro	4ª feira noite
+46	Nariz do Mundo	Cabeceiras de Basto	Cabeceiras de Basto	Regional		2ª e 3ª feira
+47	A Gaivota	Moledo	Caminha	Regional		Domingo (jantar)
+48	Ancoradouro	Caminha	Caminha	Regional		2ª feira
+49	Casa Tornedó	Moledo	Caminha	Tradicional portuguesa		
+50	Foz do Minho	Caminha	Caminha	Tradicional portuguesa	Mariscos e cabrito	4ª à noite e 5ª feira
+51	Mar de Moledo	Caminha	Caminha	Tradicional portuguesa	"Peixe grelhado; polvo assado no forno e cabrito da serra d'Arga no forno"	2ª feira
+52	Solar do Pescado	Caminha	Caminha	Tradicional portuguesa	Peixe	Domingo à noite e 2ª feira
+53	Calça Curta  ( Rest. Típico )	Foz -Tua 	Carrazeda de Ansiães	Tradicional portuguesa	Javali-Veado-Polvo Para petiscos- peixes do rio e enguias	Não encerra
+54	Churrascaria Veiga	Carrazeda de Ansiães	Carrazeda de Ansiães	Tradicional portuguesa	Posta à Mirandesa, Carnes grelhadas ( na brasa)                   Cozido à Portuguesa	Sábado
+55	Quintinha do Manel	Carrazeda de Ansiães	Carrazeda de Ansiães	Tradicional portuguesa	Bacalhau à quintinha. Vitela assada	Não encerra
+56	Sabores da Quinta	Fermil	Celorico de Basto	Tradicional portuguesa	Vitela assada, cabrito assado no forno	2ª,3ª e 4ª feira
+57	A Talha	Chaves	Chaves	Regional	Palhada Transmontana, Lombelos c/ presunto, Filetes de polvo e Arroz de grão de bico.	Sábado
+58	Adega Faustino	Chaves	Chaves	Regional	Orelha de porco, moelas, alheira, pica-pau, linguiça assada.	Domingo
+59	Albergaria Borges ( Rest.Típico )	Outeiro Jusão	Chaves	Regional	Cabrito assado, Bacalhau e Ossos da Suã	2ª feira
+60	Aprígio	Chaves	Chaves	Regional	Milhos, Cozido à Portuguesa e Vitela	Não encerra
+61	Carvalho	Chaves	Chaves	Regional	"Cabrito, Naco ""grelhado"" de vitela, Arroz de Fumeiro, Cozido à Portuguesa"	2ª feira
+62	Casa Os Três Lagares (Taberna)	Chaves	Chaves	Regional		Abre de 5ª a domingo (por marcação)
+63	Lavrador	Chaves	Chaves	Regional	"Pernil de Porco, Bacalhau;               Peixe."	5ª feira
+64	Quinta de Samaiões	Chaves	Chaves	Regional	Açorda de marisco, bacalhau e cabrito assado.	Não encerra
+65	O Recanto das Carvalhas	Gralheira	Cinfães	Regional	Cabrito, borrego….	2ª feira
+66	Azeite e Alho	Apúlia	Esposende	Tradicional portuguesa	Bacalhau com Broa	
+67	Casa da Fonte	Forjães	Esposende	Tradicional portuguesa	Açorda de Marisco e Açorda de Bacalhau, Bacalhau com Broa Polvo Grelhado,…	2ª feira
+68	Foz do Cávado	Esposende	Esposende	Tradicional portuguesa	Rojões à Minhota	2ª feira
+69	Hotel Suave Mar	Esposende	Esposende	Tradicional portuguesa		
+70	Mira Rio	Esposende	Esposende	Tradicional portuguesa	Filetes Pescada	
+71	O Apúliense	Apúlia	Esposende	Tradicional portuguesa	Sapateira Recheada	
+72	O Camelo	Apúlia	Esposende	Tradicional portuguesa	Rojões	
+73	O Forno	Apúlia	Esposende	Tradicional portuguesa	Peixe Grelhado	
+74	Salgueira	Apúlia	Esposende	Tradicional portuguesa	Arroz Gambas c/ Lagosta	
+75	Adega Popular	Fafe	Fafe	Regional	Vitela assada (lista de bons pratos)	Domingo
+76	Pinto da Costa	Fafe	Fafe	Regional	Vitela assada (lista de bons pratos)	Domingo à noite e 2ª feira
+77	Tasca do Ademar	S.Clemente de Silvares - Fafe	Fafe	Regional	Churrasco de Boi c/arroz malandro e Bacalhau na brasa.	Domingo
+78	Casa Outeirinho 	Famalicão	Famalicão	Tradicional portuguesa	Cabrito assado no forno 	Domingo à noite e 2ª feira
+79	Moutados de Baixo	Famalicão	Famalicão	Regional	Bacalhau à Devesa	Não encerra
+80	O Benfica 	Famalicão	Famalicão	Tradicional portuguesa	Cabrito assado no forno 	Domingo à noite e 2ª feira
+81	O Ferrugem	Famalicão	Famalicão	Variada	Menu degustação 	2ª feira
+82	O Serenata 	Joane	Famalicão	Cozinha inspiração Italiana 	Pastas 	Domingo
+83	O Tanoeiro 	Famalicão	Famalicão	Tradicional portuguesa	Rojões e Papas de Sarrabulho 	Domingo ao jantar
+84	Santa Quitéria	Felgueiras	Felgueiras	Tradicional portuguesa	Vitela/cabrito assados e grelhados diversos…	2ª feira
+85	Petisqueira Preguiça	Mós do DOURO	Foz Côa	Regional		Não encerra
+86	Clube Paraiso 	Pevidém	Guimarães	Tradicional portuguesa	Assados vários.	2ª feira
+87	ComRequinte	Guimarães	Guimarães	Peixe Fresco	Rodovalho Fresco / Marisco Fresco	
+88	Papa Boa	Guimarães	Guimarães	Moderna	Coxa de Porco Preto c/Gambas / Tamboril c/Ameijoas e molho de salsa	Domingo
+89	Picadeiro	Guimarães	Guimarães	Moderna	Pernil Assado no Forno / Folhado de Pato c/castanhas	Domingo à noite e 2ª feira
+90	S. Gião 	Moreira Conegos 	Guimarães	Regional	Polvo, Especialidades Caça , Entradas várias	2ª feira
+91	Templo da Gula	Guimarães	Guimarães	Cozinha Moderna	Espetada de Pescada c/Arroz de Gambas	2ª feira
+92	Aquapura Douro Valley	Lamego	Lamego	Tradicional portuguesa	Cabrito assado	3ª feira
+93	Quinta Ferra Bordão	Lamego	Lamego	Tradicional portuguesa	Cabrito assado	3ª feira
+94	Caçador	Lousada	Lousada	Tradicional portuguesa	Naco de vitela assado na brasa	2ª feira
+95	Pitarisca	Lousada	Lousada	Tradicional portuguesa	Cabrito assado no forno	Domingo
+96	Visconde	Lousada	Lousada	Tradicional portuguesa		Domingo à noite
+97	Choupada 5 Coroas  ( Rest.Típico)	Macedo Cavaleiros	Macedo Cavaleiros	Tradicional portuguesa	Posta e Rodeao assados na brasa	Não encerra
+98	O Montanhês	Macedo Cavaleiros	Macedo Cavaleiros	Tradicional portuguesa	Cabrito assado na brasa                           Sortido de carnes assadas c/ fumeiro	Não encerra
+99	Saldanha	Macedo Cavaleiros	Macedo Cavaleiros	Regional		Não encerra
+100	Pensão Magalhães	Marco Canaveses	Marco Canaveses	Tradicional portuguesa	Arroz de Forno lenha e Anho	
+101	Plátano	Marco Canaveses	Marco Canaveses	Tradicional portuguesa	Carne Arouquesa+ Anho	2ª feira
+102	Ponte de Pedra	Marco Canaveses	Marco Canaveses	Tradicional portuguesa	"Bacalhau c/ broa; Picanha ; Cabrito, Menu ( diversos pratos s/ limite)"	Não encerra
+103	Quinta da Lama	Vila Meã	Marco Canaveses	Regional	"Anho assado com chouriço; bife com castanhas; lombo à lagar; por encomenda: picanha"	Domingo e feriados
+104	Quinta do Mosteirô	Marco Canaveses	Marco Canaveses	Regional	Anho no forno	
+105	Solar do Muro	Marco Canaveses	Marco Canaveses	Tradicional portuguesa	"Bacalhau à Solar; Anho assado"	2ª feira
+106	Adega do Sossego	Melgaço	Melgaço	Regional	Naco grelhado ,Cozido á portuguesa com carnes caseiras, lampreia	2ª feira
+107	Panorama	Melgaço	Melgaço	Regional	Entradas variadas, lampreia , sável do rio Minho e naco grelhado	2ª feira
+108	O Mirandês	Miranda do Douro	Miranda do Douro	Regional		Domingo ao jantar
+109	A Adega Regional	Mirandela	Mirandela	Regional		Domingo ao jantar
+110	Flor de Sal	Mirandela	Mirandela	Regional	"Trio de porco bísaro; Peixe no Sal"	2ª feira
+111	Maria Rita	Romeu	Mirandela	Tradicional portuguesa	Açorda de espargos e bacalhau à Maria Rita	2ª feira
+112	O Grés	Mirandela	Mirandela	Tradicional portuguesa	"Bacalhau à Grés; posta Mirandesa"	
+113	A Lareira	Mogadouro	Mogadouro	Regional		2ª feira
+114	Lagar	Moncorvo	Moncorvo	Regional	Posta Mirandesa	Não encerra
+115	O Artur	Carviçais	Moncorvo	Regional	Posta Mirandesa -Cabrito Assado	2ª feira
+116	Adega Regional - Os Setes Condes	Mondim de Basto	Mondim de Basto	Regional	O cozido. O cabrito. A vitela assada/forno. A cabidela. 	Não encerra
+117	O Transmontano	Mondim de Basto	Mondim de Basto	Regional	Javali, As couves, Os milhos, O cozido, O cabrito/forno. Vitela assada/Forno,  A cabidela, A feijoada à transmontana.	Não encerra
+118	Tasca da Tia Alice	Mondim de Basto	Mondim de Basto	Tradicional portuguesa	Enchidos e Petiscos	Não encerra
+119	Casa de Padornelos (Taberna)	Montalegre	Montalegre	Regional	Vários - sobremesa rabanadas	Não encerra (por marcação)
+120	Nevada	Montalegre	Montalegre	Regional		4ª feira
+121	Sol e Chuva	Montalegre	Montalegre	Tradicional portuguesa		Não encerra
+122	A Casa do Baixinho	Paredes	Paredes	Tradicional portuguesa	Bacalhau folhado com creme 	Domingo
+123	A Cozinha da Terra	Paredes	Paredes	Tradicional portuguesa	"Bacalhau com Broa; Cabrito assado no formo"	2ª feira
+124	Conselheiro	Paredes de Coura	Paredes de Coura	Regional	"Bacalhau à Cons; Cozido à Cons.; Arroz de lampreia; Trutas de escabeche; Pica no chão; cabrito"	Domingo à noite e 2ª feira
+125	O Conde	Pedras Salgadas	Pedras Salgadas	Tradicional portuguesa	Cozinha típica Portuguesa, com cabrito assado.	Não encerra
+126	Miradouro	Penafiel	Penafiel	Tradicional portuguesa	Lampreia, Cabrito e Bacalhau	
+127	O Moinho do Moleiro	Paço Sousa	Penafiel	Tradicional portuguesa	Presunto/broa e vinho.Cozido Portuguesa	4ª feira 
+128	O Ramirinho	Penafiel	Penafiel	Tradicional portuguesa	Assados	2ª feira a partir das 19h
+129	O Moinho	Campo do Corrô	Ponte da Barca	Regional	Panados de polvo com arroz de legumes e feijão	3ª feira
+130	A Carvalheira	Ponte de Lima	Ponte de Lima	Regional	"Cabrito assado; Bacalhau c/ broa"	2ª feira (Férias de 11 a 31 Out.)
+131	Beco das Selas 	Ponte de Lima	Ponte de Lima	Regional		Sábado
+132	Bocados	Ponte de Lima	Ponte de Lima	Regional	"Lampreia e sável; Bacalhau espiritual; Arroz de sarrabulho"	Domingo
+133	Cozinha Velha	Ponte de Lima	Ponte de Lima	Tradicional portuguesa	Cabrito e Leitão assado	3ª feira
+134	Encanada	Ponte de Lima	Ponte de Lima	Tradicional portuguesa		Não encerra
+135	O Açude	Arcozelo	Ponte de Lima	Regional		Domingo à noite e 2ª feira
+136	O Bodegão	Póvoa de Varzim	Póvoa de Varzim	Tradicional portuguesa	Arroz Cabidela, Sardinhas, Peixe Grelhado	2ª feira
+137	O Costa	Póvoa de Varzim	Póvoa de Varzim	Tradicional portuguesa	Arroz de tamboril e açorda de marisco	3ª feira
+138	O Dhalia	Póvoa de Varzim	Póvoa de Varzim	gourmet	Bife de veado	Não encerra
+139	O Farol	Póvoa de Varzim	Póvoa de Varzim	Peixes e Mar	Mariscos e Snacks diversos	
+140	O Firmino	Póvoa de Varzim	Póvoa de Varzim	Tradicional portuguesa	Sardinha, Peixe Grelhado, Bacalhau	3ª feira
+141	O Marinheiro	Póvoa de Varzim	Póvoa de Varzim	Peixes e Mar	Mariscos e Peixe Grelhado/Assado	
+142	O Patio	Póvoa de Varzim	Póvoa de Varzim	Tradicional portuguesa	Peixe, Arroz Cabidela	
+143	O Zé das letras	Povoa de Varzim	Póvoa de Varzim	Tradicional portuguesa	Pá de Cabrito e de Porto e Bacalhau à Zé	Domingo
+144	Quebra-Mar	Póvoa de Varzim	Póvoa de Varzim	Peixes e Mar	Peixes e Mariscos	2ª feira
+145	Castas e Pratos	Régua	Régua	Cozinha Moderna		Não encerra
+146	Cêpa Torta	Alijó	Régua	Regional	Cacho de Porco Bizaro	3ª feira
+147	Douro In	Régua	Régua	Cozinha requintada	Bacalhau à Douro In	
+148	Qta. da Romaneira dos Sonhos	Alijó	Alijó	Tradicional portuguesa		Domingo à noite e 2ª feira
+149	Pelourinho	Alijó	Régua	Variada		Não encerra
+150	Quinta de São Domingos	Régua	Régua	Variada		Não encerra
+151	Rabelo - Vintage House	Pinhão	Régua	Cozinha requintada	Posta à mirandeza	Não encerra
+152	Repentina (Típico)	Vila Seca de Poiares	Régua	Tradicional portuguesa	Cabrito Assado	2ª feira
+153	Varanda da Régua	Régua	Régua	Regional		Não encerra
+154	Alice da Barraca	Resende	Resende	Tradicional portuguesa	Peixe do Rio, Arroz de Cabidela 	Não encerra
+155	Douro à Vista	Resende	Resende	Tradicional portuguesa	Cabrito Assado no Forno, Cozido á Portuguesa	2ª feira
+156	Douro Park Hotel	Resende	Resende	Tradicional portuguesa	Cabrito Assado no Forno, Cozido á Portuguesa	Não encerra
+157	O Forno ( Casa Regional )	S. João da Pesqueira	S. João da Pesqueira	Tradicional portuguesa		Não encerra
+158	Cá Te Espero	Rebordões	Santo Tirso	"Petiscos
+Tipica Portuguesa"	Cabrito assado no Forno a lenha/ Rojões á moda do Minho	2ª feira
+159	Solar do Burguês	Santo Tirso	Santo Tirso	Tradicional portuguesa	Especialidade Assados no Forno e petiscos variados	Não encerra
+160	O Abocanhado	Brufe	Terras de Bouro	Regional	Bacalhau com migas, Cabrito e vitela Barrosã	
+161	Flor do Ave	Trofa	Trofa	Tradicional portuguesa	Leitão	3ª feira
+162	O Beco 	Trofa	Trofa	Tradicional portuguesa	Bacalhau no Forno e Sarrabulho	2ª feira
+163	Tourigalo	Trofa	Trofa	Tradicional portuguesa	Especialidade de Grelhados (Carne e Peixe) 	Não encerra
+164	Ancoramar	V. Praia Âncora	V. Praia Âncora	Tradicional portuguesa	Peixe	5ª feira Inverno
+165	Portobello	V. Praia Âncora	V. Praia Âncora	Tradicional portuguesa		Não encerra
+166	Tasquinha do Ibraim	V. Praia Âncora	V. Praia Âncora	Tradicional portuguesa	Peixe	Não encerra
+167	Verdes Lírios	V. Praia Âncora	V. Praia Âncora	Tradicional portuguesa	Peixe	Não encerra
+168	Casa Álvaro	Valença	Valença	Tradicional portuguesa		2ª feira
+169	Pousada S. Teotonico	Valença	Valença	Tradicional portuguesa		2ª feira
+170	Restaurante Quinta do Prazo	Valença	Valença	Variada		Domingo à noite e 2ª feira
+171	Casa da Amoreira (Taberna)	Valpaços	Valpaços	Regional		Não encerra
+172	Casa do Ermeiro (Taberna)	Valpaços	Valpaços	Regional		Não encerra 
+173	Casa Mariana	Viana Castelo	Viana Castelo	Tradicional portuguesa		3ª feira
+174	O Camelo	Sta. Marta Portuzelo	Viana Castelo	Regional	"Arroz de cabidela; sarrabulho; bacalhau"	2ª feira 
+175	Darque Vila 	Darque	Viana Castelo	Internacional		2ª feira 
+176	O Espigueiro de Santoínho	Darque	Viana Castelo	Tradicional portuguesa		3ª feira
+177	Aquafalls Spa Hotel Rural	Vieira do Minho	Vieira do Minho	Requintada		Não encerra
+178	Taberna Valentim	Viana Castelo	Viana Castelo	Pratos Peixe	Peixe	Domingo
+179	Hotel Forte S. João Baptista	Vila do Conde	Vila do Conde	Requintada		-
+180	Le Fruit des Fondues	Vila do Conde	Vila do Conde	Fondues 	Fondues (sobremesa fondue chocolate) 	Só abre ao jantar e Domingo só ao almoço
+181	Le Villageois	Vila do Conde	Vila do Conde	Tradicional portuguesa	Espetos de pescada e camarão	2ª feira
+182	Pedra Alta	Vila do Conde	Vila do Conde	Marisco	Grelhado de marisco, bacalhau à pescador	
+183	Praiamar	Vila do Conde	Vila do Conde	Marisco	Picanha, espetada de marisco	
+184	Ramon	Vila do Conde	Vila do Conde	Tradicional portuguesa	"Cabrito assado no forno, tamboril;parrilhada de peixes e arroz à valenciana"	3ª feira
+185	Romando 	Vila do Conde	Vila do Conde	Requintada	Peixe fresco  e carne mirandesa, charolesa e barrosã. Carta de vinhos/Garrafeira	3ª feira
+186	S. Roque	Vila do Conde	Vila do Conde	Tradicional portuguesa	Cabrito no Forno e Filetes de pescada.	2ª feira
+187	Santana Hotel	Vila do Conde	Vila do Conde	Tradicional portuguesa	Bacalhau com brôa ou Posta Barrosã	Não encerra
+188	Os Lázaros	Carvalho de Egas	Vila Flor	Tradicional portuguesa	Naco (vitela) na Pedra, Açorda de Marisco	2ª feira
+189	Casa das Velhas	Vila Nova Cerveira	Vila Nova Cerveira	Variada		Domingo à noite e 2ª feira
+190	Casa do Lau	Vila Nova Cerveira	Vila Nova Cerveira	Tradicional portuguesa	Polvo à lagareiro e cabrito	5ª feira
+191	Costa do Sol	Estrada do Minho	Vila Pouca Aguiar	Regional	Assado de maronesa.	
+192	Adega Regional Passos Perdidos	Vila Real	Vila Real	Regional		Domingo à noite e 2ª feira
+193	Albergaria Rio Beça	Boticas	Vila Real	Regional		Domingo à noite
+194	Casa de Souto Velho (Taberna)	Chaves	Vila Real	Regional		Não encerra
+195	Chaxoila	Vila Real	Vila Real	Regional		Domingo
+196	Espadeiro	Vila Real	Vila Real	Variada		Domingo à noite e 3ª feira
+197	Estalagem Qtaª do Paço	Vila Real	Vila Real	Tradicional portuguesa	Bacalhau cozido com grão e cabrito assado no forno …	Não encerra
+198	Lameirão	Vila Real	Vila Real	Tradicional portuguesa	Tripas aos molhos	Não encerra
+199	Maria do Carmo	Vila Real	Vila Real	Tradicional portuguesa	Polvo Grelhado, Joelho da Porca, Arroz de Pato 	2ª feira
+200	Museu dos Presuntos	Vila Real	Vila Real	Tradicional portuguesa	Petiscos e fumeiro	Domingo
+201	O Barriguinha Cheia	Vila Real	Vila Real	Tradicional portuguesa		Não encerra
+202	O Mateus	Vila Real	Vila Real	Específica	Rodízio	Não encerra
+203	Ponte Romana	Sabrosa	Vila Real	Regional		Não encerra
+204	Terra da Montanha	Vila Real	Vila Real	Regional	Bacalhau assado/ Joelho de porco	Domingo à noite e feriados
+205	Churrasqueira Barros	Vila Verde	Vila Verde	Tradicional portuguesa	Espetada mista	Domingo
+206	Manjar do Mar	Braga	Vila Verde	Marisqueira	"Mariscos; Peixe grelhado e posta barrosã"	2ª feira
+207	Sevilhana	Braga	Vila Verde	Grelhados/ Pratos Sul Americanos	Parrilhada Argentina / Lombo grelhado	3ª feira
+208	Torres	Braga	Vila Verde	Tradicional portuguesa	Cabrito, Bacalhau	5ª feira
+209	Cidadela Transmontana	Vinhais	Vinhais	Regional	Pratos relacionados com caça e fumeiro.	Domingo
+210	Madre Garcia	Vinhais	Vinhais	Regional	Posta  Mirandesa	Sábado
+211	O Delfim	Vinhais	Vinhais	Regional	"Vitela no churrasco; variedade de fumeiro e caça."	Sábado
+212	Solar de Montemuro	Cinfães	Viseu	Regional	"Papas de perdiz; Vitela assada "	Não encerra
+213	Xisto	Vizela	Vizela	Regional	Folhados de aves 	2ª. feira
