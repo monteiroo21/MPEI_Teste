@@ -1,4 +1,5 @@
 rest = readcell('restaurantes.txt', 'Delimiter', '\t');
+numRest = height(rest);
 
 turistas=load('turistas1.data'); 
 t= turistas(1:end,1:2); 
@@ -29,11 +30,14 @@ while true
         break;
     end
 
-    switch choice
+    switch userInput
         % Restaurants evaluated by you
         case 1
-            restaurants = usersSet{userID};
-            printRestaurants(restaurants_data(restaurants, :));
+            restaurants = restaurantsEvaluated(userID, t);
+            n = length(restaurants);
+            for i = 1:n
+                printInfo(restaurants(i), rest);
+            end
             continue;
         % Set of restaurants evaluated by the most similar user
         case 2  
@@ -117,16 +121,16 @@ while true
     end
 end
 
-
-function Set = restaurantsEvaluated(userData)
-    % Lista de utilizadores
-    users = unique(userData(:,1));      % Fica com os IDs dos utilizadores
-    Nu = length(users);                 % Número de utilizadores
-
-    % Lista de restaurantes para cada utilizador
-    Set = cell(Nu, 1);                          % Inicializa a lista de restaurantes para cada utilizador
-    for n = 1:Nu                                % Para cada utilizador
-        ind = userData(:,1) == users(n);        % Índices dos restaurantes avaliados pelo utilizador n
-        Set{n} = [Set{n} userData(ind,2)];      % Adiciona os restaurantes avaliados pelo utilizador n
+function restaurants = restaurantsEvaluated(userID, t)
+    ind = t(:, 1) == userID;
+    restaurants = t(ind, 2);
+end
+    
+function printInfo(restaurant, rest)
+    for i = 1:7
+        if ismissing(rest{restaurant, i})
+            rest{restaurant, i} = '';
+        end
     end
+    fprintf('Restaurant ID: %3d - %s | Location: %s, %s | Cuisine: %s | Dishes: %s | Days off: %s\n', rest{restaurant, 1:7});
 end
