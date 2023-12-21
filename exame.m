@@ -98,16 +98,13 @@ while true
             for i = 1:n
                 printInfo1(restaurants(i), rest);
             end
-            restID = input('Select a restaurant');
+            restID = input('Select a restaurant: ');
             exists = 0;
             for k = 1:n
                 if restID == restaurants(i)
                     exists = 1;
+                    break;
                 end
-            end
-            if (exists == 0) 
-                disp('You selected a wrong restaurant');
-                break;
             end
             
             k = 100;
@@ -123,7 +120,7 @@ while true
 
             for i = 1:3
                 ind = sortingIndexes(i);
-                printInfo1(restaurants(i), res);
+                printInfo1(restaurants(i), rest);
             end
             continue;
         % Estimate the number of evaluations for each restaurant
