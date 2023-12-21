@@ -10,6 +10,19 @@ numUsers = length(users);
 
 Set = restaurantsEvaluated(t);
 
+seed = 127;  % Seed para o gerador de números aleatórios
+k = 50;      % Número de funções de hash
+tic;
+signatures = inf(numUsers, k);
+for n = 1 : numUsers                                         % Para cada restaurante n
+    conjunto = Set{n, :};                                       % Lista de restaurantes avaliados pelo restaurante n
+    for i = 1 : length(conjunto)                                % Para cada restaurante avaliado pelo restaurante n
+        key = num2str(conjunto(i));                           % Chave para o minhash
+        minHash = minhash_DJB31MA(key, seed, k);                  % Calcular a assinatura minhash
+        signatures(n, :) = min(signatures(n, :), minHash);        % Guardar a assinatura minhash mais pequena
+    end
+end
+
 userID = input('Insert User ID (1 to 836): ');
 if userID < 1 || userID > numUsers
     userID = input('The number you gave is invalid. Try again: ');
@@ -43,7 +56,8 @@ while true
             continue;
         % Set of restaurants evaluated by the most similar user
         case 2 
-            J = calculateDistances(Set, numUsers, userID);
+            k = 50;
+            J = calculateDistances(signatures, k, numUsers, userID);
             [minValue, simUser] = min(J(:, userID));
             restaurants = Set{simUser};
             n = length(restaurants);
@@ -84,7 +98,33 @@ while true
             for i = 1:n
                 printInfo1(restaurants(i), rest);
             end
+            restID = input('Select a restaurant');
+            exists = 0;
+            for k = 1:n
+                if restID == restaurants(i)
+                    exists = 1;
+                end
+            end
+            if (exists == 0) 
+                disp('You selected a wrong restaurant');
+                break;
+            end
             
+            k = 100;
+
+            distances = ones(1, numUsers);
+            for i = 1:numUsers
+                if i ~= restID
+                    distances(i) = 1 - sum(signatures(restID, :) ~= signatures(i, :))/k;
+                end
+            end
+
+            [~, sortingIndexes] = sort(distances);
+
+            for i = 1:3
+                ind = sortingIndexes(i);
+                printInfo1(restaurants(i), res);
+            end
             continue;
         % Estimate the number of evaluations for each restaurant
         case 5
@@ -119,17 +159,15 @@ function printInfo1(restaurant, rest)
     fprintf('Restaurant ID: %3d - %s | Location: %s\n', rest{restaurant, 1:2}, rest{restaurant, 4});
 end
 
-function J = calculateDistances(set, numUsers, userID)
-    J=zeros(numUsers);
+function J = calculateDistances(signatures, k, numUsers, userID)
+    J=ones(numUsers, numUsers);
     tic
     for n2= 1:numUsers
         if n2 ~= userID
-            i = intersect(set{userID}, set{n2});
-            u = union(set{userID}, set{n2});
-            J(n2, userID) = 1 - (length(i)/length(u));
+            J(userID, n2) = sum(signatures(userID,:) ~= signatures(n2,:)) / k;
+            J(n2, userID) = J (userID, n2);
         end
     end
-    J(userID, userID) = 1;
     toc
 end
 
@@ -139,6 +177,23 @@ function h= DJB31MA( chave, seed)
     h= seed;
     for i=1:len
         h = mod(31 * h + chave(i), 2^32 -1);
+    end
+end
+
+function minHash = minhash_DJB31MA(chave, seed, k)
+    len = length(chave);
+    chave = double(chave);
+    
+    h = seed;
+    for i = 1:len
+        h = mod(31 * h + chave(i), 2^32 - 1);
+    end
+    
+    minHash = zeros(1, k);
+    
+    for j = 1:k
+        h = mod(31 * h + j + 0.1, 2^32 - 1); % Adiciona 0.1 para evitar zero
+        minHash(j) = h;
     end
 end
 
